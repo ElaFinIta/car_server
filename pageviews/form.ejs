@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/styles.css" >
+    <title><%= title %></title>
+</head>
+<body>
+    <main>
+        <h1><%= header %></h1>
+        <div>
+            <form action="<%= action %>" method="post">
+                <p> <small>Required fields marked with *</p></small>
+                <p class="lab_inp_wrapper">
+                    <label for="productNumber">Product number*:</label>
+                    <input type="text" id="productNumber" name="productNumber" size="5" value="<%= productNumber.value %>" <%= productNumber.readonly %> >
+                </p>
+                <p class="lab_inp_wrapper">
+                    <label for="model">Model*:</label>
+                    <input type="text" id="model" name="model" size="16" value="<%= model.value %>" <%= model.readonly %> required >
+                </p>
+                <p class="lab_inp_wrapper">
+                    <label for="maxspeed">Maximum speed*:</label>
+                    <input type="text" id="maxspeed" name="maxspeed" size="5" value="<%= maxspeed.value %>" <%= maxspeed.readonly %> required >
+                </p>
+                <p class="lab_inp_wrapper" >
+                    <label for="rating">Rating*:</label>
+                    <input type="text" id="rating" name="rating" size="15" value="<%= rating.value %>" <%= rating.readonly %> required >
+                </p>
+                <p class="lab_inp_wrapper">
+                    <label for="year">Year*:</label>
+                    <input type="text" id="year" name="year" size="15" value="<%= year.value %>" <%= year.readonly %> required >
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <a href="/"><button>Menu</button></a>
+    </main>
+</body>
+</html>

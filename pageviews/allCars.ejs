@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h2>All cars</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product number</th>
+                    <th>Model</th>
+                    <th>Maximum speed</th>
+                    <th>Rating 1-5</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% result.forEach(car => {  %>
+                    <tr>
+                        <td><%= car.productNumber %></td>
+                        <td><%= car.model %></td>
+                        <td><%= car.maxspeed %></td>
+                        <td><%= car.rating %></td>
+                        <td><%= car.year %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <a href="/"><button>Back</button></a>
+    </main>
+</body>
+</html>

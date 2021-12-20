@@ -1,0 +1,4 @@
+{
+    "storageFile": "cars.json",
+    "adapterFile": "carAdapter.js"
+}
